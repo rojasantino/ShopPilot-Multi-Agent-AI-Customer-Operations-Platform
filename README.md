@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# 🛍️ ShopPilot — Multi-Agent AI Customer Operations Platform
+
+# ShopPilot — Multi-Agent AI Customer Operations Platform
 
 Python · FastAPI · Pydantic · LangGraph · PostgreSQL + pgvector · Redis · Streamlit · Docker
 
