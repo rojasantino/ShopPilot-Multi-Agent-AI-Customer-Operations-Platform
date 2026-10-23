@@ -1,0 +1,26 @@
+{"message": "Where is my order ORD-1001?", "intents": ["order_status"]}
+{"message": "Can you track ORD-1002 for me", "intents": ["order_status"]}
+{"message": "My package is late", "intents": ["order_status"]}
+{"message": "What is the status of my delivery?", "intents": ["order_status"]}
+{"message": "When will my order arrive?", "intents": ["order_status"]}
+{"message": "I want a refund for my damaged headphones", "intents": ["return_request"]}
+{"message": "The charger is broken, can I send it back?", "intents": ["return_request"]}
+{"message": "I'd like to return the shoes", "intents": ["return_request"]}
+{"message": "Please start the return for ORD-1004", "intents": ["return_request"]}
+{"message": "I received the wrong item", "intents": ["return_request"]}
+{"message": "Do you have running shoes in stock?", "intents": ["product_search"]}
+{"message": "How much is the smart watch?", "intents": ["product_search"]}
+{"message": "I'm looking for a yoga mat", "intents": ["product_search"]}
+{"message": "Do you sell phone chargers?", "intents": ["product_search"]}
+{"message": "Can you recommend headphones?", "intents": ["product_search"]}
+{"message": "What is your return policy?", "intents": ["return_request", "policy_question"]}
+{"message": "What is your warranty on earbuds?", "intents": ["policy_question"]}
+{"message": "What is the shipping cost?", "intents": ["policy_question"]}
+{"message": "Which payment methods do you accept?", "intents": ["policy_question"]}
+{"message": "Can I cancel my order?", "intents": ["order_status", "policy_question"]}
+{"message": "Do you offer free shipping?", "intents": ["policy_question"]}
+{"message": "My order is late and one item is damaged. Can I return it?", "intents": ["order_status", "return_request"]}
+{"message": "Check ORD-1001 and tell me if I can get a refund", "intents": ["order_status", "return_request"]}
+{"message": "Hello", "intents": []}
+{"message": "Thanks, bye", "intents": []}
+{"message": "Tell me a joke", "intents": []}
