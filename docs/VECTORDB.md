@@ -62,15 +62,3 @@ The `hash` embedder's vectors are mostly zeros (sparse); a real model gives 384 
 * Vector dimension is fixed in the column type (`vector(384)`); changing models with a different size needs a migration.
 
 ---
-
-## தமிழ் விளக்கம் (Tamil)
-
-**Vector database என்றால் என்ன?**
-- சாதாரண database-இல் நாம் சரியான சொல்லைத் தேடுவோம். Vector database-இல் அர்த்தத்தின் அடிப்படையில் தேட முடியும்.
-- ஒவ்வொரு உரைத் துண்டும் (chunk) 384 எண்களாக மாற்றப்படுகிறது. இதற்கு embedding என்று பெயர். ஒத்த அர்த்தம் உள்ள உரைகளின் எண்கள் ஒன்றுக்கொன்று அருகில் இருக்கும்.
-- கேள்வி வந்ததும், அதையும் 384 எண்களாக மாற்றி, மிக அருகில் உள்ள வரிகளை (rows) Postgres எடுத்துத் தருகிறது. தூரத்தை cosine distance (`<=>`) மூலம் கணக்கிடுகிறது.
-
-**இந்த project-இல்**
-- தனி vector database தேவையில்லை. PostgreSQL + pgvector extension போதும்.
-- Table-ஐ பார்க்க: `make psql` பிறகு `SELECT * FROM knowledge_chunks LIMIT 5;`. அல்லது Streamlit-இல் "Vector Explorer" பக்கத்தைத் திறக்கவும்.
-- இயல்புநிலை `hash` embedder சொற்களை மட்டும் அடிப்படையாகக் கொண்டது. உண்மையான அர்த்த அடிப்படையிலான தேடலுக்கு `EMBEDDING_PROVIDER=sentence-transformers` பயன்படுத்தவும்.
